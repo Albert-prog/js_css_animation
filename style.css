@@ -1,0 +1,57 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    color: black;
+    background:lightgreen;
+    box-sizing: border-box;
+    
+}
+
+body {
+  position: relative;
+}
+
+h1, p {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-family: Merriweather;
+  font-weight: 900;
+  transform: translate(-50%, -50%);
+  transform-origin: 0 0;
+}
+
+p {
+  font-weight: 300;
+  }
+
+  #root.clicked p {
+    animation: spin 4s linear;
+  }
+  #root.clicked h1 {
+    animation: spin 4s linear reverse;
+
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg) translate(-50%, -50%);
+      }
+
+    100% {
+      transform: rotate(360deg) translate(-50%, -50%);
+    }
+
+  }
+
